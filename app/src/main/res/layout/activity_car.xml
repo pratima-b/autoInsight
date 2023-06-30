@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CarActivity"
+    android:background="#8367C7"
+    android:padding="30dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_arrow_back_24"
+            android:background="@color/primary"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/fugaz_one"
+            android:text="Car\nDetails"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="40sp"></TextView>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/two">
+
+        </ImageView>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/manf"
+            android:background="@drawable/border"
+            android:layout_marginTop="50dp"
+            android:padding="8dp"
+            android:hint="Manufacturer *"
+            android:inputType="text"
+            android:fontFamily="@font/abeezee"
+            android:drawableLeft="@drawable/baseline_car_repair_24"
+            android:textColor="@color/black"
+            android:drawablePadding="8dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/model"
+            android:background="@drawable/border"
+            android:layout_marginTop="20dp"
+            android:padding="8dp"
+            android:hint="Car Model *"
+            android:inputType="text"
+            android:fontFamily="@font/abeezee"
+            android:drawableLeft="@drawable/baseline_directions_car_24"
+            android:textColor="@color/black"
+            android:drawablePadding="8dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/manfYear"
+            android:background="@drawable/border"
+            android:layout_marginTop="20dp"
+            android:padding="8dp"
+            android:hint="Manufacturing Year"
+            android:inputType="number"
+            android:fontFamily="@font/abeezee"
+            android:drawableLeft="@drawable/baseline_calendar_month_24"
+            android:textColor="@color/black"
+            android:drawablePadding="8dp"/>
+
+        <Button
+            android:id="@+id/nextButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Next"
+            android:textAllCaps="true"
+            android:fontFamily="@font/fugaz_one"
+            android:background="@drawable/btnborder"
+            android:textColor="@color/white"
+            android:layout_marginTop="30dp"
+            android:elevation="5dp"
+            />
+
+
+
+    </LinearLayout>
+
+
+</ScrollView>
+
+
+

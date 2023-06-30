@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PersonalActivity"
+    android:background="#8367C7"
+    android:padding="30dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/fugaz_one"
+            android:text="Personal\nDetails"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="40sp"></TextView>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/one">
+
+        </ImageView>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/firstName"
+            android:inputType="text"
+            android:background="@drawable/border"
+            android:layout_marginTop="50dp"
+            android:padding="8dp"
+            android:hint="First Name *"
+            android:fontFamily="@font/abeezee"
+            android:drawableLeft="@drawable/baseline_person_24"
+            android:textColor="@color/black"
+            android:drawablePadding="8dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/lastName"
+            android:inputType="text"
+            android:background="@drawable/border"
+            android:layout_marginTop="20dp"
+            android:padding="8dp"
+            android:hint="Last Name *"
+            android:fontFamily="@font/abeezee"
+            android:drawableLeft="@drawable/baseline_person_24"
+            android:textColor="@color/black"
+            android:drawablePadding="8dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/houseNo"
+            android:inputType="text"
+            android:background="@drawable/border"
+            android:layout_marginTop="20dp"
+            android:padding="8dp"
+            android:hint="House Number &amp; Name *"
+            android:fontFamily="@font/abeezee"
+            android:drawableLeft="@drawable/baseline_home_24"
+            android:textColor="@color/black"
+            android:drawablePadding="8dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/city"
+            android:background="@drawable/border"
+            android:layout_marginTop="20dp"
+            android:inputType="text"
+            android:padding="8dp"
+            android:hint="City *"
+            android:fontFamily="@font/abeezee"
+            android:drawableLeft="@drawable/baseline_location_city_24"
+            android:textColor="@color/black"
+            android:drawablePadding="8dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/state"
+            android:background="@drawable/border"
+            android:layout_marginTop="20dp"
+            android:padding="8dp"
+            android:hint="State *"
+            android:inputType="text"
+            android:fontFamily="@font/abeezee"
+            android:drawableLeft="@drawable/baseline_location_city_24"
+            android:textColor="@color/black"
+            android:drawablePadding="8dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/pinCode"
+            android:background="@drawable/border"
+            android:layout_marginTop="20dp"
+            android:padding="8dp"
+            android:hint="Pin Code *"
+            android:inputType="number"
+            android:fontFamily="@font/abeezee"
+            android:drawableLeft="@drawable/baseline_pin_drop_24"
+            android:textColor="@color/black"
+            android:drawablePadding="8dp"/>
+
+        <Button
+            android:id="@+id/nextButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Next"
+            android:textAllCaps="true"
+            android:fontFamily="@font/fugaz_one"
+            android:background="@drawable/btnborder"
+            android:textColor="@color/white"
+            android:layout_marginTop="30dp"
+            android:elevation="5dp"
+            />
+
+    </LinearLayout>
+
+</ScrollView>
+
+
+

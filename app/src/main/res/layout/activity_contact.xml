@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ContactActivity"
+    android:background="#8367C7"
+    android:padding="30dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_arrow_back_24"
+            android:background="@color/primary"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/fugaz_one"
+            android:text="Contact\nDetails"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="40sp"></TextView>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/three">
+
+        </ImageView>
+
+        <com.hbb20.CountryCodePicker
+            android:layout_width="match_parent"
+            android:id="@+id/countryCodeHolder"
+            android:layout_height="wrap_content"
+            app:ccp_autoDetectCountry="true"
+            android:layout_marginTop="50dp"
+            app:ccp_showFlag="true"
+            app:ccp_showFullName="true"
+            app:ccp_showNameCode="true"
+            android:padding="5dp"
+            android:background="@drawable/border"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/mobile"
+            android:background="@drawable/border"
+            android:layout_marginTop="20dp"
+            android:padding="8dp"
+            android:hint="Mobile Number *"
+            android:inputType="phone"
+            android:fontFamily="@font/abeezee"
+            android:drawableLeft="@drawable/baseline_phone_24"
+            android:textColor="@color/black"
+            android:drawablePadding="8dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/email"
+            android:background="@drawable/border"
+            android:layout_marginTop="20dp"
+            android:padding="8dp"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:fontFamily="@font/abeezee"
+            android:drawableLeft="@drawable/baseline_email_24"
+            android:textColor="@color/black"
+            android:drawablePadding="8dp"/>
+
+        <Button
+            android:id="@+id/nextButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Next"
+            android:textAllCaps="true"
+            android:fontFamily="@font/fugaz_one"
+            android:background="@drawable/btnborder"
+            android:textColor="@color/white"
+            android:layout_marginTop="30dp"
+            android:elevation="5dp"
+            />
+
+/>
+    </LinearLayout>
+
+
+</ScrollView>
+
+
+

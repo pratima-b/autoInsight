@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VerifiedActivity"
+    android:background="@color/primary"
+    android:padding="30dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="150dp"
+            android:fontFamily="@font/fugaz_one"
+            android:text="Data\nSubmitted\nSuccessfully\n\nThank You"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="30sp"></TextView>
+
+        <Button
+            android:id="@+id/mainScreenButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Go back to main screen"
+            android:textAllCaps="true"
+            android:fontFamily="@font/fugaz_one"
+            android:background="@drawable/btnborder"
+            android:textColor="@color/white"
+            android:layout_marginTop="30dp"
+            android:elevation="5dp"
+            />
+
+    </LinearLayout>
+
+</ScrollView>
