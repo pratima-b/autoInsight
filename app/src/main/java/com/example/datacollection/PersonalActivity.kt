@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 
 
@@ -21,7 +22,6 @@ class PersonalActivity : AppCompatActivity() {
         lateinit var i: EditText
         lateinit var j: EditText
         lateinit var k: EditText
-        lateinit var l: String
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -38,9 +38,18 @@ class PersonalActivity : AppCompatActivity() {
         val nextButton = this.findViewById<Button>(R.id.nextButton)
 
         nextButton.setOnClickListener {
-            val intent = Intent(this, CarActivity::class.java).apply {
+            if (a.text.toString().isEmpty() || b.text.toString().isEmpty() || c.text.toString()
+                    .isEmpty() || d.text.toString().isEmpty() || e.text.toString()
+                    .isEmpty() || f.text.toString().isEmpty()
+            ) {
+                Toast.makeText(applicationContext, "Please fill all the mandatory * fields.", Toast.LENGTH_SHORT)
+                    .show()
             }
-            startActivity(intent)
+            else {
+                val intent = Intent(this, CarActivity::class.java).apply {
+                }
+                startActivity(intent)
+            }
         }
     }
 }

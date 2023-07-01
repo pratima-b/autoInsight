@@ -5,10 +5,10 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.ImageButton
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.datacollection.PersonalActivity.Companion.j
 import com.example.datacollection.PersonalActivity.Companion.k
-import com.example.datacollection.PersonalActivity.Companion.l
 import com.hbb20.CountryCodePicker
 
 
@@ -33,9 +33,17 @@ class ContactActivity : AppCompatActivity() {
 
         val nextButton = this.findViewById<Button>(R.id.nextButton)
         nextButton.setOnClickListener {
+            if (j.text.toString().isEmpty()) {
+                Toast.makeText(
+                    applicationContext,
+                    "Please fill the mandatory * field.",
+                    Toast.LENGTH_SHORT)
+                    .show()
+            } else {
                 val intent = Intent(this, VerifiedActivity::class.java).apply {
                 }
                 startActivity(intent)
+            }
         }
     }
 }

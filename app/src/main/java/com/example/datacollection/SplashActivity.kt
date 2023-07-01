@@ -19,8 +19,9 @@ class SplashActivity : AppCompatActivity() {
     private lateinit var topAnim: Animation
     private lateinit var bottomAnim: Animation
     private lateinit var splashLogo: ImageView
+    private lateinit var autoStringsLogo: ImageView
     private lateinit var appName: TextView
-    private var splashScreen: Int = 3000
+    private var splashScreen: Int = 5000
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -32,9 +33,12 @@ class SplashActivity : AppCompatActivity() {
 
         splashLogo = this.findViewById(R.id.splashLogo)
         appName = this.findViewById(R.id.appName)
+        autoStringsLogo = this.findViewById<ImageView>(R.id.autoStringsLogo)
+
 
         splashLogo.animation = topAnim
         appName.animation = bottomAnim
+        autoStringsLogo.animation = bottomAnim
 
         val r = Runnable {
             val intent= Intent(this,PersonalActivity::class.java).apply{

@@ -13,17 +13,14 @@ import com.example.datacollection.PersonalActivity.Companion.f
 import com.example.datacollection.PersonalActivity.Companion.g
 import com.example.datacollection.PersonalActivity.Companion.h
 import com.example.datacollection.PersonalActivity.Companion.i
-import com.example.datacollection.PersonalActivity.Companion.j
 import com.example.datacollection.PersonalActivity.Companion.k
-import com.example.datacollection.PersonalActivity.Companion.l
-import com.hbb20.CountryCodePicker
+import com.example.datacollection.PersonalActivity.Companion.j
 
 class VerifiedActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_verified)
-
 
         val dbHelper = DBHelper(applicationContext)
 

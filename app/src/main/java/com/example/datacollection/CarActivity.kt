@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.ImageButton
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.datacollection.PersonalActivity.Companion.g
 import com.example.datacollection.PersonalActivity.Companion.h
@@ -23,11 +24,19 @@ class CarActivity : AppCompatActivity() {
 
         val nextButton = this.findViewById<Button>(R.id.nextButton)
         nextButton.setOnClickListener {
-            val intent = Intent(this, ContactActivity::class.java).apply {
+            if (g.text.toString().isEmpty() || h.text.toString().isEmpty()) {
+                Toast.makeText(
+                    applicationContext,
+                    "Please fill all the mandatory * fields.",
+                    Toast.LENGTH_SHORT
+                )
+                    .show()
+            } else {
+                val intent = Intent(this, ContactActivity::class.java).apply {
+                }
+                startActivity(intent)
             }
-            startActivity(intent)
         }
-
         val backButton = this.findViewById<ImageButton>(R.id.backButton)
         backButton.setOnClickListener {
             val intent = Intent(this, PersonalActivity::class.java).apply {
